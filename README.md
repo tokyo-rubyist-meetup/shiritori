@@ -24,6 +24,21 @@ The player who used the word udon lost this game.
 
 The file `./bin/shiritori.rb` contains the basics of an implementation to get you started. It provides you an example of reading a word in katakana or hiragana from the console, checking that word against a list of common Japanese nouns, and outputting a random reply. However, it doesn't actually implement the game rules.
 
+## Testing
+
+You may want to use automated testing when developing your implementation. There's an example of how you can do this in `test/shiritori_test.rb` (run with `ruby test/shiritori_test.rb`). This test assumes you have [minitest](http://docs.seattlerb.org/minitest/) installed. Install it with
+
+```
+gem install minitest
+```
+
+or
+
+```
+gem install bundler
+bundle install
+```
+
 ## Sample Word List
 
 `data/word_data.txt` contains a list of Japanese nouns. This list was generated via `bin/generate_wordlist.rb` and uses data from [jmdict-simplified](https://github.com/scriptin/jmdict-simplified).
